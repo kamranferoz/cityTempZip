@@ -26,7 +26,10 @@ app.get(/^\/(\d{5})$/, function (req, res, next) {
         }
         res.json({
             zipcode: zipcode,
-            temperature: data.currently.temperature
+            temperature: data.currently.temperature,
+            humidity: data.currently.humidity,
+            summary: data.daily.summary,
+            icon: data.currently.icon
         });
     });
 });

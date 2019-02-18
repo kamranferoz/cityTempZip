@@ -11,7 +11,10 @@ $(function () {
         });
         request.done(function (data) {
             var temperature = data.temperature;
-            $h1.html("It is " + temperature + "&#176; in " + zipCode + ".");
+            var humidity = data.humidity;
+            var summary = data.summary;
+            var icon = data.icon;
+            $h1.html("It is " + temperature + "&#176;C in " + zipCode + ".<br> Humidity is " + humidity + ". <br> Day forecast: <br>" + summary + ".");
         });
         request.fail(function () {
             $h1.text("Error!");
