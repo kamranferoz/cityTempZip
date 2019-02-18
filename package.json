@@ -1,0 +1,24 @@
+{
+  "name": "citytemp",
+  "version": "1.0.0",
+  "description": "City Temprature Project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "city",
+    "temp",
+    "citytemp",
+    "cityTemp"
+  ],
+  "author": "Kamran Feroz",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "forecastio": "^2.0.0",
+    "zippity-do-dah": "0.0.3"
+  }
+}
